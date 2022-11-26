@@ -1,5 +1,3 @@
-const gaId = 'CVPQ8TCZXX'
-
 export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
   app: {
