@@ -585,23 +585,33 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nuxt-themes/docus@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@nuxt-themes/docus/-/docus-0.3.1.tgz#4d52d944111d2cd3c316926a710a879f423113d7"
-  integrity sha512-VJTnPWAnFgZ51SxdLf+i7HerGj1ZN97Oe1HfW41GS6KWHegIIye51oIAUQTrhpofYZV9Y0Uc4umg5ALM1NiJAQ==
+"@nuxt-themes/docus@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@nuxt-themes/docus/-/docus-1.0.1.tgz#22da10e14e29a366da84457e5b247314a819f19e"
+  integrity sha512-Phjl+jIG6811fm18xeirGy8fymeiiWSGoiczcSW9XGYnQfhgwZaio7ucZOVqIwXzOKMvVAoG590xp6evxiGhkw==
   dependencies:
     "@docsearch/css" "^3.3.0"
     "@docsearch/js" "^3.3.0"
     "@fontsource/inter" "^4.5.14"
     "@iconify/vue" "^4.0.0"
-    "@nuxt-themes/typography" "^0.0.13"
+    "@nuxt-themes/elements" "^0.1.0"
+    "@nuxt-themes/tokens" latest
+    "@nuxt-themes/typography" latest
     "@nuxt/content" "^2.2.2"
-    "@nuxthq/studio" "^0.2.3"
-    "@nuxtjs/algolia" "^1.1.5"
+    "@nuxthq/studio" "^0.2.6"
+    "@nuxtjs/algolia" "^1.2.0"
     "@nuxtjs/color-mode" "^3.1.8"
     "@vueuse/core" "^9.5.0"
     "@vueuse/nuxt" "^9.5.0"
     pinceau latest
+
+"@nuxt-themes/elements@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@nuxt-themes/elements/-/elements-0.1.0.tgz#56031a7fc8068017fa27ed9e30b7afab10ef2842"
+  integrity sha512-OndK0hf2vy/4MoUOGE9FuRZDZuMBGgUaKcThkiWhlfXzqV7zz/Kjv8v1oQbAWlF/ISePmMCkVMmPh1Aq/8dLdQ==
+  dependencies:
+    "@nuxt-themes/tokens" latest
+    "@vueuse/core" "^9.6.0"
 
 "@nuxt-themes/tokens@latest":
   version "1.1.13"
@@ -613,10 +623,10 @@
     pinceau latest
     style-value-types "^5.1.2"
 
-"@nuxt-themes/typography@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/@nuxt-themes/typography/-/typography-0.0.13.tgz#b157adf85d3db8dfd42f885e5f1771ce792a615b"
-  integrity sha512-fUUnpb1kgvf8Gj7BAetzcEV4+pkcK/dYcRBhliJ8US3P26MvWgNFqoP43JOO2n2dI1wKXerIN9gUhrQvhVvQCw==
+"@nuxt-themes/typography@latest":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@nuxt-themes/typography/-/typography-0.0.24.tgz#a443791a0f10659c1036ef772b13c8f239f45516"
+  integrity sha512-WJV2AO7bDP32Au8o7S+0eMUNeXKsH6VYKoz2feXdOaHk9Wu+sb0AUMR/+bHQAUva6m7uavLAlTb/AVinO/BYhA==
   dependencies:
     "@nuxt-themes/tokens" latest
     "@nuxtjs/color-mode" "^3.1.8"
@@ -782,7 +792,7 @@
     vite-plugin-checker "^0.5.1"
     vue-bundle-renderer "^1.0.0"
 
-"@nuxthq/studio@^0.2.3":
+"@nuxthq/studio@^0.2.6":
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/@nuxthq/studio/-/studio-0.2.7.tgz#5302b15d376f9d6857148fd1aad301a28ec7f6ba"
   integrity sha512-WTNO0hUHmyrxCIcPl8ltT022YZ2RmzFvMaHbQ+FpsjuF/wILOAM/i6kOiRcd/5+0xOkOssz+ZwoWElmNad+5RA==
@@ -794,7 +804,7 @@
     socket.io-client "^4.5.3"
     ufo "^0.8.6"
 
-"@nuxtjs/algolia@^1.1.5":
+"@nuxtjs/algolia@^1.2.0":
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/algolia/-/algolia-1.3.0.tgz#389b10eb2bcaa7eeb7c0244580e78dc580ba4227"
   integrity sha512-JftBocdX+ywVKnM21ArxJlZ4KQ9+d/bqk043ugPtRmNomdyOn/ZE8FdDf8qoDPpcBeVLH/Ch/DCExeGOtPF0Cg==
@@ -1219,7 +1229,7 @@
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.45.tgz#a3fffa7489eafff38d984e23d0236e230c818bc2"
   integrity sha512-Ewzq5Yhimg7pSztDV+RH1UDKBzmtqieXQlpTVm2AwraoRL/Rks96mvd8Vgi7Lj+h+TH8dv7mXD3FRZR3TUvbSg==
 
-"@vueuse/core@9.6.0", "@vueuse/core@^9.5.0":
+"@vueuse/core@9.6.0", "@vueuse/core@^9.5.0", "@vueuse/core@^9.6.0":
   version "9.6.0"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-9.6.0.tgz#de1d4730849cdbe28a9ebcf6cad167a700919603"
   integrity sha512-qGUcjKQXHgN+jqXEgpeZGoxdCbIDCdVPz3QiF1uyecVGbMuM63o96I1GjYx5zskKgRI0FKSNsVWM7rwrRMTf6A==
