@@ -15,7 +15,7 @@ export default defineAppConfig({
     aside: {
       level: 1,
       exclude: [],
-      collapsed: true
+      collapsed: false
     },
     header: {
       title: `Morty's blog`,
