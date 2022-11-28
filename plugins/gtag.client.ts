@@ -8,15 +8,21 @@ export default defineNuxtPlugin(({ provide }) => {
 
   window.dataLayer = window.dataLayer || []
 
-  function gtag(...args: any[]) {
-    window.dataLayer.push(args)
+  function gtag(...any: any[]) {
+    window.dataLayer.push(arguments)
   }
 
   provide('gtag', gtag)
+
   gtag('js', new Date())
   gtag('config', GA_ID)
 
   router.afterEach((to) => {
-    gtag('config', GA_ID, { 'page_path': to.fullPath, 'location_path': window.location.origin + to.fullPath })
+    gtag('config', GA_ID,
+      {
+        'page_path': to.fullPath,
+        'location_path': window.location.origin + to.fullPath
+      }
+    )
   })
 })
