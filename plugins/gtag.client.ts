@@ -4,6 +4,7 @@ export default defineNuxtPlugin(({ provide }) => {
   const router = useRouter()
   if (process.env.NODE_ENV !== 'production') {
     provide('gtag', (...args: any[]) => { })
+    return
   }
 
   window.dataLayer = window.dataLayer || []
