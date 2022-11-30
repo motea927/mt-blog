@@ -2,6 +2,9 @@ export default defineNuxtConfig({
   extends: '@nuxt-themes/docus',
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'zh-Hant'
+      },
       meta: [
         {
           name: 'google-site-verification',
