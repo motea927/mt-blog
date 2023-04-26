@@ -7,11 +7,6 @@ export default defineAppConfig({
     socials: {
       github: 'motea927'
     },
-    github: {
-      root: 'content',
-      edit: true,
-      contributors: false
-    },
     aside: {
       level: 1,
       exclude: [],
@@ -23,7 +18,13 @@ export default defineAppConfig({
       showLinkIcon: true
     },
     footer: {
-      credits: false
+      credits: false,
+      iconLinks: [
+        {
+          href: 'https://nuxt.com',
+          icon: 'simple-icons:nuxtdotjs'
+        }
+      ]
     }
   }
 })
