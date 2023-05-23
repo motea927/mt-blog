@@ -10,11 +10,11 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt-themes/docus": "^1.9.0",
+    "@nuxt-themes/docus": "^1.12.0",
     "@nuxt/eslint-config": "^0.1.1",
     "@nuxt/image-edge": "1.0.0-28020728.5df24eb",
     "eslint": "^8.35.0",
-    "nuxt": "3.4.2",
+    "nuxt": "^3.4.2",
     "sass": "^1.62.1",
     "sitemap": "^7.1.1"
   }
